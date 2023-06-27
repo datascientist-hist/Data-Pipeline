@@ -12,22 +12,22 @@ Dopo aver superato i controlli, i file devono essere archiviati inalterati e car
 Correzione:
 - Si identificano i dati di errore (valore negativo) e quelli fuori scala e per ciascuno di essi si applica un algoritmo di correzione che sostituisce il valore mancante con l’ultimo valore valido ricevuto
 Arricchimento:
-  - Sulla base di una mera tabella di lookup, si associa ogni stazione meteo ad una zona, intesa come rappresentanza di un gruppo di stazioni.
+- Sulla base di una mera tabella di lookup, si associa ogni stazione meteo ad una zona, intesa come rappresentanza di un gruppo di stazioni.
 Successivamente si salvano tali dati su un DB dati validi
 In seguito al salvataggio dei dati corretti e arricchiti segue un ultimo stadio di processing, che consiste nel generare dati aggregati come segue:
  
 -	Temperatura
   -	Calcolare la temperatura media per stazione meteo
   - oraria (per ora piena, es. tra le 13:00 e le 13:55)
-▪	giornaliera (es. tra la 00:00 e le 23:55)
-▪	giornaliera dalle 9 (tra le 9:00 e le 8:55)
-o	Calcolare la temperatura media di ciascun gruppo
+	- giornaliera (es. tra la 00:00 e le 23:55)
+  -	giornaliera dalle 9 (tra le 9:00 e le 8:55)
+  - Calcolare la temperatura media di ciascun gruppo
 -	Precipitazioni
-o	calcolare i valori cumulati (sommando) per stazione meteo
-▪	orario
-▪	giornaliero
-▪	giornaliero alle 9
-o	Calcolare il valore di precipitazione cumulata per ciascun gruppo
+  -	calcolare i valori cumulati (sommando) per stazione meteo
+  -	orario
+  -	giornaliero
+  -	giornaliero alle 9
+  -	Calcolare il valore di precipitazione cumulata per ciascun gruppo
 Una volta terminata l’esecuzione della pipeline i dati aggregati generati dovranno essere visualizzati attraverso un BI tool ed inoltre dovrà essere inviata una mail ad un indirizzo prestabilito per informare l’utente della disponibilità dei dati aggiornati.
 
 
