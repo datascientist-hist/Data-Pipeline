@@ -35,11 +35,12 @@ In seguito al salvataggio dei dati corretti e arricchiti segue un ultimo stadio 
 Una volta terminata l’esecuzione della pipeline i dati aggregati generati dovranno essere visualizzati attraverso il software Tableau  ed inoltre dovrà essere inviata una mail utilizzando il server SMTP di Gmail, ad un indirizzo prestabilito per informare l’utente della disponibilità dei dati aggiornati.**Ogni proceso della Pipeline dovrà essere orchestrato da Airflow.**
 
 ## Implementazione
+### Airflow DAG
+![](Image/AIRFLOW.jpg)
 
 ### Diagramma di Flusso e Architetturale
 ![](Image/PIPELINE_detailed_V2.jpg)
 ![](Image/pipeline_architettura.jpg)
 
-#### Airflow DAG
-![](Image/AIRFLOW.jpg)
+
 
