@@ -23,8 +23,7 @@ In seguito al salvataggio dei dati corretti e arricchiti segue un ultimo stadio 
 	- giornaliera (es. tra la 00:00 e le 23:55)
    	- giornaliera dalle 9 (tra le 9:00 e le 8:55)
   	- Calcolare la temperatura media di ciascun gruppo
--	Precipitazioni
-  	- calcolare i valori cumulati (sommando) per stazione meteo
+  - Precipitazioni ( calcolare i valori cumulati (sommando) per stazione meteo )
   	- orario
   	- giornaliero
  	- giornaliero alle 9
