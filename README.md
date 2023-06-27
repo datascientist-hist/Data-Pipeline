@@ -36,7 +36,7 @@ Una volta terminata l’esecuzione della pipeline i dati aggregati generati dovr
 
 ## Implementazione
 
-### Diagramma di Flusoo e Architetturale
+### Diagramma di Flusso e Architetturale
 ![](Image/PIPELINE_detailed_V2.jpg)
 ![](Image/pipeline_architettura.jpg)
 
