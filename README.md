@@ -8,6 +8,7 @@ I file ricevuti per essere considerati validi dovranno superare i seguenti contr
 2.  Correttezza formato file (prime tre righe di intestazione, sono corrette? Il formato dei dati su ciascuna colonna è corretto? Es. prima colonna contiene un 	timestamp, seconda colonna contiene valori
 3. Corrispondenza dato nel file con dato nel nome del file (file pluvio contiene dati pluviometrici? Controllare sia intestazione riga che range valori presenti)
 Durante la verifica della validità dei file bisogna tenere in considerazione che i valori negativi sono codici di errore, che in un primo passaggio di verifica di formattazione del file possono essere accettati come validi
+
 Dopo aver superato i controlli, i file validati e non devono essere archiviati inalterati e caricati su un Database NoSql MongoDb. Una volta disponibili i dati Raw Validati , si effettuano due passaggi di correzione ed arricchimento:
 1. Correzione:
 	- Si identificano i dati di errore (valore negativo) e quelli fuori scala e per ciascuno di essi si applica un algoritmo di correzione che sostituisce il valore mancante con l’ultimo valore valido ricevuto
