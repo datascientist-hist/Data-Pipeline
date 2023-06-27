@@ -40,3 +40,6 @@ Una volta terminata l’esecuzione della pipeline i dati aggregati generati dovr
 ![](Image/PIPELINE_detailed_V2.jpg)
 ![](Image/pipeline_architettura.jpg)
 
+#### Airflow DAG
+![](Image/AIRFLOW.jpg)
+
