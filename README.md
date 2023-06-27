@@ -39,6 +39,7 @@ Una volta terminata l’esecuzione della pipeline i dati aggregati generati dovr
 <p align="center">
   <img src="Image/AIRFLOW.jpg" />
 </p>
+
 ### Diagramma di Flusso e Architetturale
 ![](Image/PIPELINE_detailed_V2.jpg)
 ![](Image/pipeline_architettura.jpg)
