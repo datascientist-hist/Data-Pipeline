@@ -1,4 +1,5 @@
 # Data-Pipeline
+[Image/stazioni-meteo-4.jpg]
 ## Scenario
 Nel territorio siciliano sono state installate 185 stazioni meteo che generano dati sulle precipitazioni (in millimetri) e sulla temperatura (in gradi centigradi). Il numero di stazioni può variare in base all’attivazione di nuove stazioni o alla dismissione delle esistenti. Ogni stazione è identificata in modo univoco dal nome della località in cui è stata installata. Alla fine di ogni giornata, ciascuna stazione genera due file in formato CSV, uno per la temperatura e uno per le precipitazioni. Ogni file contiene tutte le misurazioni del parametro corrispondente (ad esempio temperatura o precipitazioni) effettuate durante la giornata, con una periodicità minima di 5 minuti (che potrebbe variare in intervalli di 5, 10, 15, 20, 30 minuti, ecc.). La tipologia del file (parametro misurato) e il giorno di riferimento possono essere identificati sia dal nome del file stesso che all'interno del suo contenuto.
 ## Specifiche
@@ -29,6 +30,8 @@ In seguito al salvataggio dei dati corretti e arricchiti segue un ultimo stadio 
  	- giornaliero alle 9
   	- Calcolare il valore di precipitazione cumulata per ciascun gruppo
   	  
-Una volta terminata l’esecuzione della pipeline i dati aggregati generati dovranno essere visualizzati attraverso il software Tableau  ed inoltre dovrà essere inviata una mail utilizzando il server SMTP di Gmail, ad un indirizzo prestabilito per informare l’utente della disponibilità dei dati aggiornati.
+Una volta terminata l’esecuzione della pipeline i dati aggregati generati dovranno essere visualizzati attraverso il software Tableau  ed inoltre dovrà essere inviata una mail utilizzando il server SMTP di Gmail, ad un indirizzo prestabilito per informare l’utente della disponibilità dei dati aggiornati.**Ogni proceso della Pipeline dovrà essere orchestrato da Airflow.**
+
+## Implementazione
 
 
