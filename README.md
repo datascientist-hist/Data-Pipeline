@@ -28,6 +28,7 @@ In seguito al salvataggio dei dati corretti e arricchiti segue un ultimo stadio 
   	- giornaliero
  	- giornaliero alle 9
   	- Calcolare il valore di precipitazione cumulata per ciascun gruppo
+  	- 
 Una volta terminata l’esecuzione della pipeline i dati aggregati generati dovranno essere visualizzati attraverso il software Tableau  ed inoltre dovrà essere inviata una mail utilizzando il server SMTP di Gmail, ad un indirizzo prestabilito per informare l’utente della disponibilità dei dati aggiornati.
 
 
