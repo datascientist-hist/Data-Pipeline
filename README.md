@@ -5,7 +5,7 @@ Nel territorio siciliano sono state installate 185 stazioni meteo che generano d
 La pipeline da progettare e realizzare deve poter raccogliere i file, sia sulle precipitazioni che sulle temperature, archiviarli in un raw data storage, quindi estrarne i dati ed associarli a ciascuna specifica stazione meteo, in separate tabelle per pluvio, piuttosto che per temperatura.
 I file ricevuti per essere considerati validi dovranno superare i seguenti controlli:
 - Correttezza formato nome file
--	Correttezza formato file (prime tre righe di intestazione, sono corrette? Il formato dei dati su ciascuna colonna è corretto? Es. prima colonna contiene un -timestamp, seconda colonna contiene valori
+-  Correttezza formato file (prime tre righe di intestazione, sono corrette? Il formato dei dati su ciascuna colonna è corretto? Es. prima colonna contiene un --timestamp, seconda colonna contiene valori
 - Corrispondenza dato nel file con dato nel nome del file (file pluvio contiene dati pluviometrici? Controllare sia intestazione riga che range valori presenti)
 Durante la verifica della validità dei file bisogna tenere in considerazione che i valori negativi sono codici di errore, che in un primo passaggio di verifica di formattazione del file possono essere accettati come validi
 Dopo aver superato i controlli, i file devono essere archiviati inalterati e caricati su un DB RAW data. Una volta disponibili i dati Raw, si effettuano due passaggi di correzione ed arricchimento:
@@ -16,11 +16,10 @@ Arricchimento:
 Successivamente si salvano tali dati su un DB dati validi
 In seguito al salvataggio dei dati corretti e arricchiti segue un ultimo stadio di processing, che consiste nel generare dati aggregati come segue:
  
--	Temperatura
-  -	Calcolare la temperatura media per stazione meteo
-  - oraria (per ora piena, es. tra le 13:00 e le 13:55)
+- Temperatura ( Calcolare la temperatura media per stazione meteo)
+  	- oraria (per ora piena, es. tra le 13:00 e le 13:55)
 	- giornaliera (es. tra la 00:00 e le 23:55)
-  -	giornaliera dalle 9 (tra le 9:00 e le 8:55)
+   	- giornaliera dalle 9 (tra le 9:00 e le 8:55)
   - Calcolare la temperatura media di ciascun gruppo
 -	Precipitazioni
   -	calcolare i valori cumulati (sommando) per stazione meteo
