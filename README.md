@@ -12,13 +12,13 @@ Dopo aver superato i controlli, i file devono essere archiviati inalterati e car
 Correzione:
 - Si identificano i dati di errore (valore negativo) e quelli fuori scala e per ciascuno di essi si applica un algoritmo di correzione che sostituisce il valore mancante con l’ultimo valore valido ricevuto
 Arricchimento:
-- Sulla base di una mera tabella di lookup, si associa ogni stazione meteo ad una zona, intesa come rappresentanza di un gruppo di stazioni.
+  - Sulla base di una mera tabella di lookup, si associa ogni stazione meteo ad una zona, intesa come rappresentanza di un gruppo di stazioni.
 Successivamente si salvano tali dati su un DB dati validi
 In seguito al salvataggio dei dati corretti e arricchiti segue un ultimo stadio di processing, che consiste nel generare dati aggregati come segue:
  
 -	Temperatura
---	Calcolare la temperatura media per stazione meteo
-▪	oraria (per ora piena, es. tra le 13:00 e le 13:55)
+  -	Calcolare la temperatura media per stazione meteo
+  - oraria (per ora piena, es. tra le 13:00 e le 13:55)
 ▪	giornaliera (es. tra la 00:00 e le 23:55)
 ▪	giornaliera dalle 9 (tra le 9:00 e le 8:55)
 o	Calcolare la temperatura media di ciascun gruppo
