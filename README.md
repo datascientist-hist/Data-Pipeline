@@ -17,7 +17,7 @@ Successivamente si salvano tali dati su un DB dati validi
 In seguito al salvataggio dei dati corretti e arricchiti segue un ultimo stadio di processing, che consiste nel generare dati aggregati come segue:
  
 -	Temperatura
-- -	Calcolare la temperatura media per stazione meteo
+--	Calcolare la temperatura media per stazione meteo
 ▪	oraria (per ora piena, es. tra le 13:00 e le 13:55)
 ▪	giornaliera (es. tra la 00:00 e le 23:55)
 ▪	giornaliera dalle 9 (tra le 9:00 e le 8:55)
