@@ -14,7 +14,8 @@ Dopo aver superato i controlli, i file validati e non devono essere archiviati i
 	- Si identificano i dati di errore (valore negativo) e quelli fuori scala e per ciascuno di essi si applica un algoritmo di correzione che sostituisce il valore mancante con l’ultimo valore valido ricevuto
 2. Arricchimento:
 	- Sulla base di una mera tabella di lookup, si associa ogni stazione meteo ad una zona, intesa come rappresentanza di un gruppo di stazioni.
-Successivamente si salvano tali dati su un database MySQL 
+	Successivamente si salvano tali dati su un database MySQL
+
 In seguito al salvataggio dei dati corretti e arricchiti segue un ultimo stadio di processing, che consiste nel generare dati aggregati come segue:
  
 - Temperatura ( Calcolare la temperatura media per stazione meteo)
